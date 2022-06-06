@@ -8,7 +8,7 @@ import chaise2 from "../images/Chaise2.png";
 import etagere2 from "../images/Etagere2.png";
 import etagere1 from "../images/Etagere1.png";
 import canape2 from "../images/Canape2.png";
-
+import Range from "./Range.jsx";
 function Home() {
   return (
     <>
@@ -40,7 +40,7 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </div>
-
+      <Range />
       <div>
         <div className="container my-5 py-5">
           <div className="rom">

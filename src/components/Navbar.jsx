@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/Logo.png";
 import { NavLink } from "react-router-dom";
-
+import Search from "./Search.jsx";
 const Navbar = () => {
   return (
     <div>
@@ -45,13 +45,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search"
-              ></input>
-            </form>
+            <Search />
             <NavLink className="btn btn-outline-light ms-5" to="/panier">
               <i className="fa fa-shopping-cart"></i>
             </NavLink>
