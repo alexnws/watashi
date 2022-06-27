@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/range.css";
 
-export default function App() {
+const Range = () => {
   const [value, onChange] = useState(1);
   useEffect(() => {
     const ele = document.querySelector(".buble");
@@ -23,4 +23,6 @@ export default function App() {
       <div className="buble">{value}</div>
     </div>
   );
-}
+};
+
+export default Range;

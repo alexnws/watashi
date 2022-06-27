@@ -9,6 +9,8 @@ import etagere2 from "../images/Etagere2.png";
 import etagere1 from "../images/Etagere1.png";
 import canape2 from "../images/Canape2.png";
 import Range from "./Range.jsx";
+import Filter from ".//Filter.jsx";
+import FilterColor from ".//FilterColor.jsx";
 function Home() {
   return (
     <>
@@ -40,13 +42,21 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <Range />
       <div>
         <div className="container my-5 py-5">
           <div className="rom">
             <div className="col-12">
-              <h1 className="display-6 fw-bolder">Produits populaires</h1>
+              <h1 className="display-6 fw-bolder ">Produits populaires</h1>
               <hr />
+              <div className="d-flex justify-content-around py-3 ">
+                <p>
+                  Prix
+                  <Range />
+                </p>
+
+                <Filter />
+                <FilterColor />
+              </div>
             </div>
           </div>
         </div>
